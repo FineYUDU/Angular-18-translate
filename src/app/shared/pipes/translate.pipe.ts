@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class TranslatePipe implements PipeTransform {
   
-  transform(translateKey: string, lang: string): string {
+  transform(translateKey: string | undefined, lang: string): string {
 
     if (!translateKey) {
       // Return a default value or handle the error gracefully

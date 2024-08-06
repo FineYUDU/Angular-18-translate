@@ -1,16 +1,27 @@
 ![Logo Fine Dev](./src/assets/github-translate.svg)
 
-## Translate
+## Angular 18.1.1 Translate
 
 1. ```npm install```
 
-2. instal ```npm install typings -g --save-dev``` 
+## If you want to used in your proyect 
 
-3. ```npm install @types/node --save-dev```
+1.  instal ```npm install typings -g --save-dev``` 
 
-4. in tsconfig.app.json add the next line in "compilerOptions"
+2. ```npm install @types/node --save-dev```
+
+3. in tsconfig.app.json add the next line in "compilerOptions"
 ```
     "compilerOptions":{
         "types": [ "node" ],
     }
-```# Angular-18-translate
+```
+4. Copy the pipe from app/shared/pipes/translate.pipe.ts 
+
+5. Copy the service from app/core/services/localstorage.service.ts 
+
+6. Copy the service from app/core/services/translate.service.ts 
+
+7. import the pipe in the component and inject the 2 services.
+
+8. then enjoyed.
